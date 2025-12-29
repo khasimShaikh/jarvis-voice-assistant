@@ -1,0 +1,13 @@
+#libraries need to install for project
+
+SpeechRecognition
+pyttsx3
+pywhatkit
+pyjokes
+wikipedia
+pyautogui
+requests
+playsound
+psutil
+pygame
+pyaudio
