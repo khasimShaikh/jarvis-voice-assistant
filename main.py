@@ -89,7 +89,7 @@ def say_riddle():
 def find_weather(city):
     try:
         Api_key='replace your api key here'
-        data=requests.get(f"").json()
+        data=requests.get(f"replace your api here").json()
         weather=data['weather'][0]['description']
         temperature=round(data['main']['temp']-273.15,2)
         return f"The temperature in {city} is {temperature}°C and the weather is {weather}"
@@ -228,7 +228,6 @@ def open_downloads():
         speak("Opening downloads folder")
     else:
         speak("Downloads folder not found")
-
 
 
 def perform_task():
@@ -456,5 +455,7 @@ def perform_task():
         elif "bye" in command or "stop" in command:
             speak("Good bye! have a nice day")
             break
+        else:
+            speak("Sorry, I don't understand the command")
 
 perform_task()
